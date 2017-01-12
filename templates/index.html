@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<link href='css/{$index_style}.css' rel='stylesheet' type='text/css'>
+	<title>{$title}</title>
+</head>
+
+<body class='index'>
+	<header>
+		<h1>
+			{$header}
+		</h1>
+	</header>
+	<nav>
+		{section name=i loop=$nav}
+			{$nav.i}
+		{/section}
+	</nav>
+	<article>
+		{section name=i loop=$articel}
+			{$artical.i}
+		{/section}
+	</article>
+	<footer>
+		{$footer}
+	</footer>
+</body>
+
+</html>
